@@ -1,0 +1,35 @@
+$orange: #FFC84D;
+$yellow: #FFF3D7;
+$purple: #9C69E2;
+$purpleHover: #B17FF4;
+$white: #ffffff;
+$darkBlue: #212353;
+$darkGray: #4B5D68;
+$lightYellow: #EEAA12;
+$pink: #F063B8;
+
+
+@mixin bigTitle{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 130%;
+}
+@mixin mediumTitle{
+  font-size: 25px;
+  line-height: 130%;
+}
+@mixin smallTitle{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+}
+@mixin subtitle{
+  font-size: 23px;
+  line-height: 160%;
+}
+@mixin text{
+  font-size: 16px;
+  line-height: 165%;
+}
+
+

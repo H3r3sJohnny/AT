@@ -1,0 +1,287 @@
+.mobile__menu {
+  margin: 0 -20px;
+}
+.header{
+  padding: 25px 0;
+  .container{
+    display: none;
+  }
+  &__mobile{
+    display: flex;
+  }
+}
+.container{
+  padding: 0;
+}
+.main{
+  padding: 49px 0 71px;
+  &__title{
+    font-size: 35px;
+    line-height: 130%;
+  }
+  &__subtitle{
+    margin: 40px auto 0;
+    width: 87%;
+  }
+  &__slider{
+    margin: 58px 0 0;
+    padding: 32px 3.125vw 90px;
+    border-radius: 0;
+  }
+}
+.slide{
+    padding: 7px 3.125vw 10px 3.125vw;
+  &__num{
+    display: none;
+  }
+  &__container{
+    padding: 51px 9.375vw 39px;
+  }
+}
+.slick-dots {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+}
+.footer{
+  padding: 62px 6.25vw 0;
+  .container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo{
+    margin-left: 0.75vw;
+    align-self: start;
+    width: 18.75vw;
+  }
+  &__menu{
+    flex-direction: column;
+    li + li {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+.SignUp{
+  margin-top: 40px;
+  flex-direction: column;
+  width: 100%;
+  &__input{
+    width: 100%;
+  }
+  &__btn{
+    margin: 22px auto;
+  }
+}
+@media all and (min-width: 768px) {
+  .mobile__menu {
+    margin: 0 -3.125vw;
+  }
+  .container{
+    padding: 0 3.125vw;
+  }
+  .header{
+    &__mobile {
+      padding: 0 3.125vw;
+    }
+  }
+  .main{
+    padding: 47px 0 92px;
+    &__title {
+      @include bigTitle;
+    }
+    &__subtitle{
+      width: 90%;
+      margin: 35px auto 0;
+    }
+    &__slider{
+      border-radius: 50px;
+      margin: 57px 2.5vw 0;
+      padding: 92px 6.875vw 120px;
+    }
+  }
+  .slide{
+    padding: 7px 11.875vw 10px;
+    &__num{
+      display: block;
+    }
+    &__container{
+      padding: 47px 7vw 39px 15.625vw;
+    }
+  }
+  .slick-dots {
+    left: 7.5vw;
+    bottom: 7.5vw;
+    transform: translateX(0);
+    li + li {
+      margin-left: 17px;
+    }
+  }
+  .footer{
+    padding: 52px 0;
+    background: #9C69E2;
+    .container{
+      padding: 0 3.125vw;
+    }
+    &__logo{
+      width: 6.250vw;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    nav{
+      margin-left: 9.375vw;
+      display: flex;
+      align-items: center;
+    }
+    &__menu{
+      display: flex;
+      font-weight: 500;
+      @include text;
+      li{
+        margin-top: 14px;
+      }
+      a{
+        color: $white;
+      }
+    }
+  }
+  .SignUp{
+    margin-top: 0;
+    flex-direction: row;
+    margin-left: auto;
+    width: 56.25vw;
+    align-self: flex-start;
+    &__input{
+      width: 32vw;
+    }
+    &__btn{
+      margin: 0;
+    }
+  }
+}
+@media all and (min-width: 992px) {
+  .container{
+    padding: 0 12.5vw;
+  }
+  .main {
+    &__slider {
+      border-radius: 50px;
+      margin: 57px 3.125vw 0;
+      padding: 92px 6.25vw 120px;
+    }
+  }
+  .slide{
+    padding: 7px 8vw 10px 9vw;
+    &__container {
+      padding: 47px 6vw 39px 11.5vw;
+    }
+  }
+  .slick-dots {
+    left: 5.8vw;
+    bottom: 5.8vw;
+  }
+  .footer {
+    nav {
+      margin-left: 6vw;
+    }
+    &__menu li + li {
+      margin-top: 16px;
+    }
+  }
+  .SignUp{
+    width: 43.75vw;
+    &__input{
+      width: 25vw;
+    }
+  }
+}
+@media all and (min-width: 1280px) {
+  .header{
+    padding: 30px 0;
+    nav{
+      margin-left: 131px;
+      svg{
+        margin-left: 6px;
+        margin-right: -6px;
+      }
+      li{
+        display: flex;
+        align-items: center;
+      }
+    }
+    .container{
+      display: flex;
+    }
+    &__mobile{
+      display: none;
+    }
+  }
+
+
+
+  .main {
+    padding: 92px 0 151px;
+    &__slider {
+      margin: 57px 3.125vw 0;
+      padding: 90px 3.125vw 120px;
+    }
+  }
+  .slide {
+    padding: 7px 3.125vw 10px 4.6875vw;
+    width: 25vw;
+    &__container{
+      padding: 50px 3.125vw 41px 5.9vw;
+    }
+  }
+
+
+
+
+
+
+}
+@media all and (min-width: 1600px) {
+  .container{
+    padding: 0 15.5vw;
+  }
+  .main {
+    padding: 92px 0 151px;
+    &__subtitle {
+      margin: 37px auto 0;
+      width: 50%;
+    }
+  }
+  .slick-dots {
+    left: 3.125vw;
+    bottom: 3.125vw;
+  }
+  .footer{
+    padding: 74px 0 75px;
+    .container {
+      padding: 0 15.5vw;
+    }
+    &__logo{
+      width: 3.125vw;
+    }
+    nav {
+      margin-left: 9.375vw;
+    }
+    &__menu {
+      flex-direction: row;
+      li{
+        margin-top: 0;
+      }
+      li + li {
+        margin-top: 0;
+        margin-left: 51px;
+      }
+    }
+  }
+  .SignUp{
+    width: 31.25vw;
+    &__input {
+      width: 21.875vw;
+    }
+  }
+}
